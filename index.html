@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CLG</title>
+</head>
+<body>
+    <div class="main">
+        <h1>CLG DATA PAGE</h1>
+        <div class="container">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="first">
+
+            <label for="middlename">Middle Name</label>
+            <input type="text" name="middlename" id="middle">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="last">
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phone"> Telephone No.</label>
+            <input type="number" name="phone" placeholder="WhatsApp Contact preferrably" id="phone">
+
+            <label for="extra">Additional Info</label>
+            <textarea type="text" name="extra" placeholder="What else would you like to tell us" id="extra"></textarea>
+
+            <button type="submit" onclick="engage()">Send</button>
+            <div class="engage" id="engage">
+                    <h2>Codelearn Grow</h2>
+                <p> Your data has been received successfully. Click OK to continue</p>
+                <button type="button" onclick="disengage()">OK</button>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        let popup = document.getElementById("engage");
+    
+        function engage() {
+            popup.classList.add("open-popup");
+        }
+        function disengage() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+</body>
+</html>

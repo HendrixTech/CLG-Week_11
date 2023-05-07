@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/Girl-and-bird.png);
+    
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: bisque;
+}
+
+.container{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 10px 10px 1px;
+    gap: 10px;
+    background-image: none;
+
+}
+.container label{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    /* border-radius: 5px;
+    border: none; */
+}
+
+input{
+    width: 85%;
+    font-size: 15px;
+    padding-left: 10px;
+    outline-style: none;
+    background-image: none;
+    color: black;
+    
+
+}
+
+button{
+    width: 90%;
+    height: 10%;
+    background-image: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover{
+    text-decoration: underline;
+    
+}
+
+.engage{
+    width: 400px;
+    background: rgb(83, 32, 32);
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    color: rgb(229, 229, 236);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.engage h2{
+    font-size: 30px;
+    margin: 20px 10px;
+    background-color: rgb(83, 32, 32);
+}
+.engage button{
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: white;
+    border: 0;
+    font-size: 25px;
+
+}
